@@ -1,6 +1,13 @@
 <h1>Books</h1>
 <h4>Tilte</h4>
 <h4>Body</h4>
+<% @lists.each do |list| %>
+ <span><%= list.title %></span>
+ <span><%= list.body %></span>
+ <%= link_to "Show", list_path(list.id) %>
+ <%= link_to "Edit", edit_list_path(list.id) %>
+<% end %>
+
 
 <h2>New book</h2>
 <%= form_with model: @list do |f| %>
