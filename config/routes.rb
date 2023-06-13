@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  get '/top' => 'homes#top'
   get 'list/show'
   get 'list/edit'
   get 'list/index'
