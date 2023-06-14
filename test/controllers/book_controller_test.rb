@@ -1,18 +1,18 @@
 require "test_helper"
 
-class ListControllerTest < ActionDispatch::IntegrationTest
+class BookControllerTest < ActionDispatch::IntegrationTest
   test "should get show" do
-    get list_show_url
+    get book_show_url
     assert_response :success
   end
 
   test "should get edit" do
-    get list_edit_url
+    get book_edit_url
     assert_response :success
   end
 
   test "should get index" do
-    get list_index_url
+    get book_index_url
     assert_response :success
   end
 end
